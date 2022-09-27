@@ -6,6 +6,7 @@ body {
 #title {
     background-color: #ff4c68;
     color: white;
+    padding-bottom: 15%;
 }
 
 .container-fluid {
@@ -52,6 +53,7 @@ p {
     font-size: 1.2rem;
     font-family: "Montserrat";
     font-weight: 400;
+    color: #fff;
 }
 
 .navbar-brand {
@@ -68,14 +70,32 @@ p {
 
 /* Title image */
 .title-image {
-    width: 60%;
+    width: 18%;
     transform: rotate(25deg);
+    position:absolute;
+    left: 60%;
+}
+
+@media (max-width: 1002px) {
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0);
+        width: 30%;
+    }
+    
 }
 
 /* Features */
 #features {
     padding: 7% 15%;
     text-align: center;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
 }
 
 .features-icons {
@@ -133,4 +153,32 @@ p {
 
 .card {
     height: 100%;
+}
+
+/* cta section */
+#cta {
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 7% 15%;
+    color: #fff;
+}
+
+.cta-h3 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    padding-bottom: 5%;
+}
+
+/* footer */
+
+#footer {
+    text-align: center;
+    background-color: #fff;
+    padding: 7% 15%;
+}
+
+.contact {
+    font-size: 1.5rem;
+    color: black;
+    margin: 20px 10px;
 }
